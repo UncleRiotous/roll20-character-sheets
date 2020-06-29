@@ -125,34 +125,34 @@
                         <label class="sheet-attr-input-label sheet-attr-body">
                             Body
                             <input class="sheet-attr-input-text body" name="attr_body" type="text" title="Jet de résistance" />
-                            <button type="roll" class="sheet-roll-button" name="roll_bodyroll" value="&{template:default} {{name=Body}} {{Succès=[[(@{body}*2+@{mods})d2>2]]}} {{Moyenne=[[((@{body}*2+@{mods})%2)d2>2+[[floor((@{body}*2+@{mods})/2)]]]]}} {{Modifier=@{mods}}} "></button>
+                            <button type="roll" class="sheet-roll-button" name="roll_bodyroll" value="&{template:default} {{name=Body}} {{Success=[[(@{body}*2+@{mods})d2>2]]}} {{Average=[[((@{body}*2+@{mods})%2)d2>2+[[floor((@{body}*2+@{mods})/2)]]]]}} {{Modifier=@{mods}}} "></button>
                         </label>
                         <label class="sheet-attr-input-label sheet-attr-dexterity">
                             Dexterity
                             <input class="sheet-attr-input-text dexterity" name="attr_dexterity" type="text" title="Jet d'équilibre" />
-                            <button type="roll" class="sheet-roll-button" value="&{template:default} {{name=Dexterity}} {{Succès=[[(@{dexterity}*2+@{mods})d2>2]]}} {{Moyenne=[[((@{dexterity}*2+@{mods})%2)d2>2+[[floor((@{dexterity}*2+@{mods})/2)]]]]}} {{Modifier=@{mods}}} "></button>
+                            <button type="roll" class="sheet-roll-button" value="&{template:default} {{name=Dexterity}} {{Success=[[(@{dexterity}*2+@{mods})d2>2]]}} {{Average=[[((@{dexterity}*2+@{mods})%2)d2>2+[[floor((@{dexterity}*2+@{mods})/2)]]]]}} {{Modifier=@{mods}}} "></button>
                         </label>
                         <label class="sheet-attr-input-label sheet-attr-strength">
                             Strength
                             <input class="sheet-attr-input-text strength" name="attr_strength" type="text" title="Jet de Strength" />
-                            <button type="roll" class="sheet-roll-button" value="&{template:default} {{name=Strength}} {{Succès=[[(@{strength}*2+@{mods})d2>2]]}} {{Moyenne=[[((@{strength}*2+@{mods})%2)d2>2+[[floor((@{strength}*2+@{mods})/2)]]]]}} {{Modificateur=@{mods}}} "></button>
+                            <button type="roll" class="sheet-roll-button" value="&{template:default} {{name=Strength}} {{Success=[[(@{strength}*2+@{mods})d2>2]]}} {{Average=[[((@{strength}*2+@{mods})%2)d2>2+[[floor((@{strength}*2+@{mods})/2)]]]]}} {{Modifier=@{mods}}} "></button>
                         </label>
                     </div>
                     <div class="sheet-col sheet-collapse-margin">
                         <label class="sheet-attr-input-label sheet-right-attr">
                             Charisma
                             <input class="sheet-attr-input-text charisma" name="attr_charisma" type="text" title="Jet d'influence" />
-                            <button type="roll" class="sheet-roll-button" value="&{template:default} {{name=Charisma}} {{Succès=[[(@{charisma}*2+@{mods})d2>2]]}} {{Moyenne=[[((@{charisma}*2+@{mods})%2)d2>2+[[floor((@{charisma}*2+@{mods})/2)]]]]}} {{Modificateur=@{mods}}} "></button>
+                            <button type="roll" class="sheet-roll-button" value="&{template:default} {{name=Charisma}} {{Success=[[(@{charisma}*2+@{mods})d2>2]]}} {{Average=[[((@{charisma}*2+@{mods})%2)d2>2+[[floor((@{charisma}*2+@{mods})/2)]]]]}} {{Modifier=@{mods}}} "></button>
                         </label>
                         <label class="sheet-attr-input-label sheet-right-attr">
                             Intelligence
                             <input class="sheet-attr-input-text intelligence" name="attr_intelligence" type="text" title="Jet de logique" />
-                            <button type="roll" class="sheet-roll-button" value="&{template:default} {{name=Intelligence}} {{Succès=[[(@{intelligence}*2+@{mods})d2>2]]}} {{Moyenne=[[((@{intelligence}*2+@{mods})%2)d2>2+[[floor((@{intelligence}*2+@{mods})/2)]]]]}} {{Modificateur=@{mods}}} "></button>
+                            <button type="roll" class="sheet-roll-button" value="&{template:default} {{name=Intelligence}} {{Success=[[(@{intelligence}*2+@{mods})d2>2]]}} {{Average=[[((@{intelligence}*2+@{mods})%2)d2>2+[[floor((@{intelligence}*2+@{mods})/2)]]]]}} {{Modifier=@{mods}}} "></button>
                         </label>
                         <label class="sheet-attr-input-label sheet-right-attr">
                             Willpower
                             <input class="sheet-attr-input-text willpower" name="attr_willpower" type="text" title="Jet de courage" />
-                            <button type="roll" class="sheet-roll-button" value="&{template:default} {{name=Willpower}} {{Succès=[[(@{willpower}*2+@{mods})d2>2]]}} {{Moyenne=[[((@{willpower}*2+@{mods})%2)d2>2+[[floor((@{willpower}*2+@{mods})/2)]]]]}} {{Modificateur=@{mods}}} "></button>
+                            <button type="roll" class="sheet-roll-button" value="&{template:default} {{name=Willpower}} {{Success=[[(@{willpower}*2+@{mods})d2>2]]}} {{Average=[[((@{willpower}*2+@{mods})%2)d2>2+[[floor((@{willpower}*2+@{mods})/2)]]]]}} {{Modifier=@{mods}}} "></button>
                         </label>
                     </div>
                 </div>
@@ -173,7 +173,7 @@
                         <label class="sheet-attr-input-label">
                             Perception
                             <input class="sheet-attr-input-text perception" name="attr_perception" type="text" title="Perception = Intelligence + Willpower" />
-                            <button type="roll" class="sheet-roll-button" value="&{template:default} {{name=Perception}} {{Succès=[[(@{perception}+@{mods})d2>2]]}} {{Moyenne=[[((@{perception}+@{mods})%2)d2>2+[[floor((@{perception}+@{mods})/2)]]]]}} {{Modificateur=@{mods}}}"></button>
+                            <button type="roll" class="sheet-roll-button" value="&{template:default} {{name=Perception}} {{Success=[[(@{perception}+@{mods})d2>2]]}} {{Average=[[((@{perception}+@{mods})%2)d2>2+[[floor((@{perception}+@{mods})/2)]]]]}} {{Modifier=@{mods}}}"></button>
                         </label>
                     </div>
                     <div class="sheet-col sheet-collapse-margin">
@@ -185,7 +185,7 @@
                         <label class="sheet-attr-input-label sheet-right-attr">
                             Défense
                             <input class="sheet-attr-input-text defense" name="attr_defense" type="text" title="Defense = Passif+Actif-Taille, Passif = Body, Actif = Dexterity" />
-                            <button type="roll" class="sheet-roll-button" value="&{template:default} {{name=Defense}} {{Succès=[[(@{defense}+@{mods})d2>2]]}} {{Moyenne=[[((@{defense}+@{mods})%2)d2>2+[[floor((@{defense}+@{mods})/2)]]]]}} {{Modificateur=@{mods}}}"></button>
+                            <button type="roll" class="sheet-roll-button" value="&{template:default} {{name=Defense}} {{Success=[[(@{defense}+@{mods})d2>2]]}} {{Average=[[((@{defense}+@{mods})%2)d2>2+[[floor((@{defense}+@{mods})/2)]]]]}} {{Modifier=@{mods}}}"></button>
                         </label>
                         <label class="sheet-attr-input-label sheet-right-attr">
                             Étourdissement
@@ -222,7 +222,7 @@
                             <input type="text" name="attr_skillaverage" class="sheet-free-input skillsaverage" readonly="readonly" />
                         </div>
                         <div class="sheet-skill-roll">
-                            <button type="roll" value="&{template:default} {{name=@{skillname}}} {{Succès=[[(@{skillrating}+@{mods})d2>2]]}} {{Moyenne=[[((@{skillrating}+@{mods})%2)d2>2+[[floor((@{skillrating}+@{mods})/2)]]]]}} {{Modificateur=@{mods}}} "></button>
+                            <button type="roll" value="&{template:default} {{name=@{skillname}}} {{Success=[[(@{skillrating}+@{mods})d2>2]]}} {{Average=[[((@{skillrating}+@{mods})%2)d2>2+[[floor((@{skillrating}+@{mods})/2)]]]]}} {{Modifier=@{mods}}} "></button>
                         </div>
                     </fieldset>
                     <p class="sheet-footnote">* compétence spéciale</p>
@@ -252,7 +252,7 @@
                                 <span>(Moy.)</span>
                             </div>
                             <div class="sheet-weapon-roll">
-                                <button type="roll" value="&{template:default} {{name=@{weaponname}}} {{Succès=[[(@{weaponattack}+@{mods})d2>2]]}} {{Moyenne=[[((@{weaponattack}+@{mods})%2)d2>2+[[floor((@{weaponattack}+@{mods})/2)]]]]}} {{Modificateur=@{mods}}}"></button>
+                                <button type="roll" value="&{template:default} {{name=@{weaponname}}} {{Success=[[(@{weaponattack}+@{mods})d2>2]]}} {{Average=[[((@{weaponattack}+@{mods})%2)d2>2+[[floor((@{weaponattack}+@{mods})/2)]]]]}} {{Modifier=@{mods}}}"></button>
                             </div>
                         </div>
                         <div class="sheet-weapon-row-2">
@@ -704,7 +704,7 @@
                 <input type="text" name="attr_xp" class="sheet-wider-input-text" />
             </label>
             <label class="sheet-side-input-label">
-                <span class="sheet-side-heading">Modificateur</span>
+                <span class="sheet-side-heading">Modifier</span>
                 <span class="sheet-side-heading">Prompt</span>
                 <input type="checkbox" name="attr_mods" value="?{Dice Pool Modifier|0}" /> On
             </label>
